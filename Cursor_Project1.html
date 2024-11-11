@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Brand</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            height: 100vh;
+            background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            gap: 2rem;
+        }
+
+        .category-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .category-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid white;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            background-color: transparent;
+            color: white;
+        }
+
+        .category-btn:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        .men-btn, .women-btn, .kids-btn {
+            background-color: transparent;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <div class="category-buttons">
+                <button class="category-btn">
+                    <i class="fas fa-male"></i>
+                    Men
+                </button>
+                <button class="category-btn">
+                    <i class="fas fa-female"></i>
+                    Women
+                </button>
+                <button class="category-btn">
+                    <i class="fas fa-child"></i>
+                    Kids
+                </button>
+            </div>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div>
+            <h1>FASHION BRAND</h1>
+            <p>Discover the latest trends in fashion</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fashion Brand. All rights reserved.</p>
+    </footer>
+</body>
+</html>
